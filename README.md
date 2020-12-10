@@ -7,7 +7,7 @@ Dnsmasq分流脚本说明
 
     chmod +x unlock.sh  - 赋予脚本权限。
 
-    ./unlock.sh DNS  - 运行脚本，"DNS"为变量，自行替换。
+    ./unlock.sh DNS  - 运行脚本，【"DNS"为变量，自行替换】。
 
 特别注意
 
