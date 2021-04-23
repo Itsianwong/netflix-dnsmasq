@@ -1,5 +1,6 @@
 
-    针对ubuntu重启重置dns：
+针对ubuntu重启重置dns：
+    
     -----sudo apt install unbound【如果使用openresolv,不需安装inbound】
       systemctl stop systemd-resolved
       systemctl disable systemd-resolved
@@ -14,16 +15,29 @@
 Dnsmasq分流脚本说明
 安装的同时并设置Netflix对应DNS规则，本脚本适配c7,其它大同小异自行查找资料。
 
-    wget https://raw.githubusercontent.com/urnuts/netflix-dnsmasq/master/unlock.sh  - 下载脚本。
-    chmod +x unlock.sh  - 赋予脚本权限。
-    ./unlock.sh DNS  - 运行脚本，【"DNS"为变量ip，自行替换】。
+    wget https://raw.githubusercontent.com/urnuts/netflix-dnsmasq/master/unlock.sh
+    chmod +x unlock.sh
+    ./unlock.sh DNS【"DNS"为解锁机ip，自行替换】。
 
 特别注意
 
-    解锁成功后系统DNS应该为127.0.0.1，部分系统会自行重置系统DNS，或重启VPS系统、重启网络相关功能导致系统DNS被重置使DNS解锁失效。
+    解锁成功后系统DNS应该为127.0.0.1，部分系统会重置系统DNS致解锁失效。
 
 自定义dnsmasq的配置
 
     配置文件目录路径 /etc/dnsmasq.d/unlock.conf 。
-    修改完成重启dnsmasq。（重启命令systemctl restart dnsmasq）
+    修改完成重启dnsmasq##：systemctl restart dnsmasq
     最后重启代理工具
+
+
+流媒体解锁检测：
+
+    //全面检测Mult流媒体解锁：
+      apt install jq -y && bash <(curl -sSL "https://github.com/CoiaPrant/MediaUnlock_Test/raw/main/check.sh")
+    //检测nf,u2b,steam,dsp：
+      bash <(curl -sSL https://raw.githubusercontent.com/xb0or/nftest/main/netflix.sh)
+    //检测NetFlix脚本：
+      wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6_linux_amd64 && chmod +x nf && clear && ./nf -method full
+    //检测Youtube地域信息IPv4/IPv6机器：
+      wget -O tubecheck https://cdn.jsdelivr.net/gh/sjlleo/TubeCheck/CDN/tubecheck_1.0beta_linux_amd64 && chmod +x tubecheck && clear && ./tubecheck
+    //绝命毒师地址 ： https://www.netflix.com/title/70143836
