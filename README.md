@@ -1,7 +1,8 @@
 <code>
 针对ubuntu重启/重置dns：
 
------sudo apt install unbound【如果使用openresolv,不需安装inbound】
+sudo apt install unbound【如果使用openresolv,不需安装inbound】
+
 systemctl stop systemd-resolved
 systemctl disable systemd-resolved
 rm -rf /etc/resolv.conf
@@ -12,7 +13,8 @@ echo nameserver 9.9.9.9 >> /etc/resolv.conf
 echo nameserver 8.8.8.8 >> /etc/resolv.conf
 
 
-Netflix-Dnsmasq分流脚本说明：已经购买或者搭建了dns，在不能解锁流媒体的vps执行以下脚本：
+Netflix-Dnsmasq分流脚本说明：
+已经购买或者搭建了dns，在不能解锁流媒体的vps执行以下脚本：
 
 wget https://raw.githubusercontent.com/urnuts/netflix-dnsmasq/master/unlock.sh
 chmod +x unlock.sh
@@ -21,7 +23,6 @@ chmod +x unlock.sh
 
 
 自定义dnsmasq的配置,可放行其他流媒体/站点
-
 配置文件目录路径 /etc/dnsmasq.d/unlock.conf
 修改完成重启dnsmasq##：systemctl restart dnsmasq
 
