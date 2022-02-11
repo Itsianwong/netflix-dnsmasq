@@ -1,5 +1,5 @@
-<code>mml
-<sub>针对ubuntu重启/重置dns：</sub>
+<code>
+<strong>针对ubuntu重启/重置dns：</strong>
 
 sudo apt install unbound【如果使用openresolv,不需安装inbound】
 
