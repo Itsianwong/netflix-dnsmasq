@@ -1,4 +1,4 @@
-<strong>针对ubuntu重启/重置dns：</strong>
+<code><strong>针对ubuntu重启/重置dns：</strong>
 ```
 【如果使用openresolv,不需安装inbound】sudo apt install openresolv或者unbound
 systemctl stop systemd-resolved
@@ -10,7 +10,7 @@ echo nameserver 1.1.1.1 > /etc/resolv.conf
 echo nameserver 8.8.8.8 >> /etc/resolv.conf
 echo nameserver 9.9.9.9 >> /etc/resolv.conf
 ```
-<code><strong>Netflix-Dnsmasq分流脚本说明：</strong>
+<strong>Netflix-Dnsmasq分流脚本说明：</strong>
 ```
 已经购买或者搭建了dns，在不能解锁流媒体的vps执行以下脚本：
 
