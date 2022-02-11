@@ -1,4 +1,4 @@
-```<strong>针对ubuntu重启/重置dns：</strong>
+```<strong>针对ubuntu重启/重置dns</strong>
 
 -----sudo apt install unbound【如果使用openresolv,不需安装inbound】
 systemctl stop systemd-resolved
@@ -26,7 +26,7 @@ chmod +x unlock.sh
 
 
 
-<strong>流媒体解锁检测：</strong>
+<strong>流媒体解锁检测</strong>
 
 //全面检测Mult流媒体解锁：
 apt install jq -y && bash <(curl -sSL "https://github.com/CoiaPrant/MediaUnlock_Test/raw/main/check.sh")
