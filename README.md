@@ -28,7 +28,7 @@ chmod +x unlock.sh
 
 
 <strong>流媒体解锁检测：</strong>
-
+  ```
 //全面检测Mult流媒体解锁：
 apt install jq -y && bash <(curl -sSL "https://github.com/CoiaPrant/MediaUnlock_Test/raw/main/check.sh")
 //检测nf,u2b,steam,dsp：
@@ -38,5 +38,5 @@ wget -O nf https://github.com/sjlleo/netflix-verify/releases/download/2.6/nf_2.6
 //检测Youtube地域信息IPv4/IPv6机器：
 wget -O tubecheck https://cdn.jsdelivr.net/gh/sjlleo/TubeCheck/CDN/tubecheck_1.0beta_linux_amd64 && chmod +x tubecheck && clear && ./tubecheck
 //绝命毒师地址 ： https://www.netflix.com/title/70143836
-
+```
 
