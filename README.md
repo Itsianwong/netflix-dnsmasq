@@ -1,4 +1,4 @@
-<code><strong>针对ubuntu重启/重置dns：</strong>
+<strong>针对ubuntu重启/重置dns：</strong>
 
   
   ```
