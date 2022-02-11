@@ -1,5 +1,5 @@
 ```
-针对ubuntu重启/重置dns：
+<sub>针对ubuntu重启/重置dns：</sub>
 
 sudo apt install unbound【如果使用openresolv,不需安装inbound】
 
