@@ -1,7 +1,5 @@
-<strong>针对ubuntu重启/重置dns：</strong>
-
-  
-  ```
+<code><strong>针对ubuntu重启/重置dns：</strong>
+```
 【如果使用openresolv,不需安装inbound】sudo apt install openresolv或者unbound
 systemctl stop systemd-resolved
 systemctl disable systemd-resolved
