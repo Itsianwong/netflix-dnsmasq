@@ -27,7 +27,7 @@ chmod +x unlock.sh
 ```
 
 
-流媒体解锁检测：
+<strong>流媒体解锁检测：</strong>
 
 //全面检测Mult流媒体解锁：
 apt install jq -y && bash <(curl -sSL "https://github.com/CoiaPrant/MediaUnlock_Test/raw/main/check.sh")
