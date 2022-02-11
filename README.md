@@ -1,5 +1,6 @@
-<code><strong>针对ubuntu重启/重置dns</strong>
+<code>  <strong>针对ubuntu重启/重置dns</strong></code>
 
+<code>
 -----sudo apt install unbound【如果使用openresolv,不需安装inbound】
 systemctl stop systemd-resolved
 systemctl disable systemd-resolved
@@ -9,7 +10,7 @@ touch /etc/resolv.conf
 echo nameserver 1.1.1.1 > /etc/resolv.conf
 echo nameserver 9.9.9.9 >> /etc/resolv.conf
 echo nameserver 8.8.8.8 >> /etc/resolv.conf
-
+</code>
 
 <strong>Netflix-Dnsmasq</strong>分流脚本说明：已经购买或者搭建了dns，在不能解锁流媒体的vps执行以下脚本：
 
