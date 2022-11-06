@@ -14,7 +14,7 @@ echo nameserver 9.9.9.9 >> /etc/resolv.conf
 ```
 已经购买或者搭建了dns，在不能解锁流媒体的vps执行以下脚本：
 
-wget https://raw.githubusercontent.com/urnuts/netflix-dnsmasq/master/unlock.sh
+wget https://raw.githubusercontent.com/Itsianwong/netflix-dnsmasq/master/unlock.sh
 chmod +x unlock.sh
 ./unlock.sh DNS【"DNS"为解锁机ip，自行替换】
 特别注意：解锁成功后系统DNS应该为127.0.0.1，部分系统会重置系统DNS致解锁失效。
